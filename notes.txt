@@ -1,0 +1,3 @@
+At least two (2) objects on the cover must animate from the start.
+At least one (1) object on the cover must animate on mouse hover
+The page must be submitted as a GitHub Page. Click here for instructions on how to do that.

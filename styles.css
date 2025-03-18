@@ -1,0 +1,246 @@
+/* Background container*/
+
+.bubblegum-sans-regular {
+    font-family: "Bubblegum Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.background {
+    width: 400px;
+    height: 600px;
+    border: none;
+    background-color: #FECC2F;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+
+.eye {
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+}
+
+/* Left eye position */
+.left-eye {
+    left: 90px;
+}
+.background:hover .left-eye, .background:hover .right-eye{
+    animation: eyechange 2s infinite;
+}
+@keyframes colorchange {
+    0%   {background-color: #000000;}
+    33%  {background-color: green; }
+    66%  {background-color: red;}
+    100% {background-color: #000000;}
+}
+@keyframes textcolorchange {
+    0%   {color: #FECC2F;}
+    100% {color: #000000;}
+}
+@keyframes eyechange {
+    0%   {background-color: #000000;}
+    33%  {background-color: green; width: 120px; height: 120px;}
+    50%  {width: 240px; height: 240px;}
+    66%  {background-color: red; width: 120px; height: 120px;}
+    100% {background-color: #000000;}
+}
+
+/* Right eye position */
+.right-eye {
+    right: 90px;
+}
+
+/* Smile text */
+.smile {
+    position: absolute;
+    bottom: 180px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smile-text {
+    font-size: 28px;
+    font-weight: bold;
+    transform: rotate(15deg);
+}
+
+/* Author text */
+.author {
+    position: absolute;
+    top: 200%;
+    bottom: 40px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+
+    animation: authortext 5s infinite;
+    animation-iteration-count: infinite;
+}
+@keyframes authortext {
+    0% {
+        top: 200%;
+        bottom: 40px;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+    }
+    50% {
+        top: 100%;
+        bottom: 20px;
+        font-weight: bold;
+        font-size: 32px;
+        text-align: left;
+    }
+    100% {
+        top: 200%;
+        bottom: 40px;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+}
+
+.body {
+    background-color: #333;
+    font-family: 'Bubblegum Sans';
+    font-size: 35px;
+}
+  
+.path {
+    fill: transparent;
+}
+  
+.text {
+    fill: #FF9800;
+}
+
+.warp__placeholder{
+    position: absolute;
+    color: transparent;
+    font-size: .1px;
+}
+
+.warp {
+    display: block;
+    position: relative;
+    width: 249px;
+    height: 122px;
+    font: normal 36px/1 Bubblegum;
+    animation: textcolorchange 3s;
+    
+}
+#warp-label {
+    
+}
+
+
+[class*='warp__'] {
+    display: block;
+    position: absolute;
+}
+
+.warp__0 {
+    transform-origin: 50% 33px;
+    transform: translate(4.6737px,-16.0389px) rotate(1.473301rad);
+}
+
+.warp__1 {
+    transform-origin: 50% 33px;
+    transform: translate(3.1426999999999996px,-0.23969999999999914px) rotate(1.354691rad);
+}
+
+.warp__2 {
+    transform-origin: 50% 33px;
+    transform: translate(9.843px,18.2121px) rotate(1.182454rad);
+}
+
+.warp__3 {
+    transform-origin: 50% 33px;
+    transform: translate(17.7569px,35.1246px) rotate(0.985701rad);
+}
+
+.warp__4 {
+    transform-origin: 50% 33px;
+    transform: translate(31.5197px,48.491600000000005px) rotate(0.800077rad);
+}
+
+.warp__5 {
+    transform-origin: 50% 33px;
+    transform: translate(41.6099px,59.7269px) rotate(0.620898rad);
+}
+
+.warp__6 {
+    transform-origin: 50% 33px;
+    transform: translate(58.8601px,69.9844px) rotate(0.432096rad);
+}
+
+.warp__7 {
+    transform-origin: 50% 33px;
+    transform: translate(78.7927px,77.0623px) rotate(0.270878rad);
+}
+
+.warp__8 {
+    transform-origin: 50% 33px;
+    transform: translate(98.5495px,80.6506px) rotate(0.152203rad);
+}
+
+.warp__9 {
+    transform-origin: 50% 33px;
+    transform: translate(112.5602px,82.2036px) rotate(0.013064rad);
+}
+
+.warp__10 {
+    transform-origin: 50% 33px;
+    transform: translate(133.5882px,80.6635px) rotate(-0.144152rad);
+}
+
+.warp__11 {
+    transform-origin: 50% 33px;
+    transform: translate(153.4294px,76.7137px) rotate(-0.271649rad);
+}
+
+.warp__12 {
+    transform-origin: 50% 33px;
+    transform: translate(170.5445px,70.215px) rotate(-0.422238rad);
+}
+
+.warp__13 {
+    transform-origin: 50% 33px;
+    transform: translate(188.2051px,60.1756px) rotate(-0.618476rad);
+}
+
+.warp__14 {
+    transform-origin: 50% 33px;
+    transform: translate(204.4244px,49.711200000000005px) rotate(-0.80136rad);
+}
+
+.warp__15 {
+    transform-origin: 50% 33px;
+    transform: translate(210.4695px,37.0647px) rotate(-0.998561rad);
+}
+
+.warp__16 {
+    transform-origin: 50% 33px;
+    transform: translate(219.9476px,19.8221px) rotate(-1.225238rad);
+}
+
+.warp__17 {
+    transform-origin: 50% 33px;
+    transform: translate(225.282px,3.2353999999999985px) rotate(-1.399882rad);
+}
+
+.warp__18 {
+    transform-origin: 50% 33px;
+    transform: translate(226.9247px,-13.2059px) rotate(-1.537633rad);
+}
